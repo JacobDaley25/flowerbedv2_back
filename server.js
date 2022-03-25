@@ -17,7 +17,7 @@ app.use('/posts', postController)
 app.use('/users', userController)
 app.use('/auth', sessionController)
 app.use(cors())
-app.use
+
 
 //ROUTES
 app.listen(PORT, () => {
