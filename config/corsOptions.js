@@ -1,7 +1,7 @@
 const whitelist = [
   'localhost:3000',
   'localhost:3001',
-  'http://localhost:3001'
+  'http://localhost:3001',
   'http://localhost:3000'
 ]
 const corsOptions = {
