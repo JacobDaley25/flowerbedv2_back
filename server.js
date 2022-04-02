@@ -17,7 +17,7 @@ const userController = require('./controllers/user_controller.js')
 app.use(express.json())
 app.use('/posts', postController)
 app.use('/users', userController)
-app.use('/auth', sessionController)
+app.use('/auth', sessionsController)
 app.use(cors(corsOptions))
 
 
