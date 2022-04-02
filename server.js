@@ -11,7 +11,7 @@ const PORT = process.env.MONGODBURI || 3000
 const mongoURI = String(process.env.MONGODBURI)
 const postController = require('./controllers/postController.js')
 const sessionsController = require('./controllers/sessions_controller.js')
-const app = require('http').createServer();
+const server = require('http').createServer();
 const corsOptions = require('./config/corsOptions.js')
 const userController = require('./controllers/user_controller.js')
 //MIDDLEWARE
@@ -23,7 +23,7 @@ app.use(cors(corsOptions))
 
 
 //ROUTES
-app.listen(PORT, () => {
+server.listen(PORT, () => {
   console.log('listening...');
 })
 
