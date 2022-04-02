@@ -14,11 +14,12 @@ const sessionsController = require('./controllers/sessions_controller.js')
 const corsOptions = require('./config/corsOptions.js')
 const userController = require('./controllers/user_controller.js')
 //MIDDLEWARE
+app.use(cors(corsOptions))
 app.use(express.json())
 app.use('/posts', postController)
 app.use('/users', userController)
 app.use('/auth', sessionsController)
-app.use(cors(corsOptions))
+
 
 
 //ROUTES
