@@ -5,18 +5,20 @@ const app = express()
 const bcrypt = require('bcrypt')
 const saltRounds = 10
 const dotenv = require('dotenv')
+require('dotenv').config()
 const db = mongoose.connection
 const PORT = process.env.MONGODBURI || 3000
 const mongoURI = String(process.env.MONGODBURI)
 const postController = require('./controllers/postController.js')
 const sessionsController = require('./controllers/sessions_controller.js')
+const cornsOptions = require('./config/corsOptions.js')
 const userController = require('./controllers/user_controller.js')
 //MIDDLEWARE
 app.use(express.json())
 app.use('/posts', postController)
 app.use('/users', userController)
 app.use('/auth', sessionController)
-app.use(cors())
+app.use(cors(corsOptions))
 
 
 //ROUTES
