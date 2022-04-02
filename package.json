@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/JacobDaley25/flowerbedv2_back/issues"
   },
-  "homepage": "https://github.com/JacobDaley25/flowerbedv2_back#readme"
+  "homepage": "https://github.com/JacobDaley25/flowerbedv2_back#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
 }
