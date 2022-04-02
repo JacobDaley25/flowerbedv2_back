@@ -2,6 +2,7 @@ const whitelist = [
   'http://localhost:3001',
   'http://localhost:3000',
   'http://localhost:3000/register'
+  'http://localhost:3000/login'
 ]
 const corsOptions = {
   origin : (origin, callback) => {
