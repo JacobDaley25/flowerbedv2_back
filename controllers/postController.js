@@ -24,7 +24,7 @@ posts.post('/', (req,res)=>{
   })
 })
 posts.patch('/:_id', (req,res)=>{
-  Posts.push(req.body, (error, pushedPost)=> {
+  Posts.findByIdAndUpdate(req.body, (error, pushedPost)=> {
     res.json(pushedPost)
   })
 })
