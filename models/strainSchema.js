@@ -8,4 +8,4 @@ const strainSchema = new mongoose.Schema({
 })
 const Strain = mongoose.model('strains', strainSchema)
 
-module.exports = Strains
+module.exports = Strain
