@@ -16,6 +16,8 @@ posts.delete('/:_id', (req,res)=> {
 posts.put('/:_id', (req,res)=>{
   Posts.findByIdAndUpdate(req.params._id, req.body, {new:true}, (error, updatedPost)=> {
     res.json(updatedPost)
+    Posts.replies.push(updatedPost.replies)
+    }
   })
 })
 posts.post('/', (req,res)=>{
