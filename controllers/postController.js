@@ -23,7 +23,7 @@ posts.post('/', (req,res)=>{
     res.json(createdPost)
   })
 })
-posts.patch('/', (req,res)=>{
+posts.patch('/:_id', (req,res)=>{
   Posts.push(req.body, (error, pushedPost)=> {
     res.json(pushedPost)
   })
