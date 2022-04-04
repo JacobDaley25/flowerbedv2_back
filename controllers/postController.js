@@ -20,9 +20,9 @@ posts.delete('/:_id', (req,res)=> {
 })
 posts.put('/:_id', (req,res)=>{
   Posts.findByIdAndUpdate(req.params._id, req.body, {new:true}, (error, updatedPost)=> {
-    res.json(updatedPost),
-    }
-  )
+    res.json(updatedPost)
+
+  })
 })
 posts.post('/', (req,res)=>{
   Posts.create(req.body, (error, createdPost)=>{
