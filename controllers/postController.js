@@ -23,5 +23,9 @@ posts.post('/', (req,res)=>{
     res.json(createdPost)
   })
 })
-
+posts.patch('/', (req,res)=>{
+  Posts.push(req.body, (error, pushedPost)=> {
+    res.json(pushedPost)
+  })
+})
 module.exports = posts
