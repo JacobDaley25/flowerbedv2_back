@@ -12,4 +12,4 @@ const growSchema = new mongoose.Schema({
 })
 const Grow = mongoose.model('grows', growSchema)
 
-module.exports = Grows
+module.exports = Grow
