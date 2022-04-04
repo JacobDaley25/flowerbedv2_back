@@ -9,7 +9,7 @@ posts.get('/', (req,res)=>{
 })
 
 posts.get('/:_id', (req,res)=>{
-  Posts.find({req.params._id}, (error, foundPost)=> {
+  Posts.findById(req.params._id, (error, foundPost)=> {
     res.json(foundPost)
   })
 })
