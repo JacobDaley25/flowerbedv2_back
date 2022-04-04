@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const strainSchema = new mongose.Schema({
+const strainSchema = new mongoose.Schema({
   name: String,
   type: String,
   body: String,
