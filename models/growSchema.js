@@ -9,6 +9,7 @@ const growSchema = new mongoose.Schema({
   nutrientsUsed: String,
   week: Number,
   harvestAmount:String,
+  replies: []
 })
 const Grow = mongoose.model('grows', growSchema)
 
