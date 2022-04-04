@@ -19,4 +19,4 @@ grow.post('/', (req,res)=> {
   })
 })
 
-module.exports = grows
+module.exports = grow
