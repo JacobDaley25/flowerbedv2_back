@@ -5,7 +5,7 @@ const whitelist = [
   'http://localhost:3000/login',
   'http://localhost:3000/posts',
   'http://localhost:3000/grows',
-  'http://localhost:3000/strains'
+  'http://localhost:3000/strains',
   'https://theflowerbed.herokuapp.com',
   'https://theflowerbed.herokuapp.com/posts',
   'https://theflowerbed.herokuapp.com/register',
