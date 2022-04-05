@@ -6,12 +6,12 @@ const whitelist = [
   'http://localhost:3000/posts',
   'http://localhost:3000/grows',
   'http://localhost:3000/strains'
-  'http://theflowerbed.herokuapp.com',
-  'http://theflowerbed.herokuapp.com/posts',
-  'http://theflowerbed.herokuapp.com/register',
-  'http://theflowerbed.herokuapp.com/login',
-  'http://theflowerbed.herokuapp.com/grows',
-  'http://theflowerbed.herokuapp.com/strains'
+  'https://theflowerbed.herokuapp.com',
+  'https://theflowerbed.herokuapp.com/posts',
+  'https://theflowerbed.herokuapp.com/register',
+  'https://theflowerbed.herokuapp.com/login',
+  'https://theflowerbed.herokuapp.com/grows',
+  'https://theflowerbed.herokuapp.com/strains'
 ]
 const corsOptions = {
   origin : (origin, callback) => {
